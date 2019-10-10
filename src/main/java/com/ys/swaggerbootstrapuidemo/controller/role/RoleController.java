@@ -24,13 +24,13 @@ public class RoleController {
 
     @ApiOperation("添加角色")
     @PostMapping("/addRole")
-    public void addRole(@RequestBody @ApiParam(name="角色对象",value="传入json格式",required=true) Role role){
+    public void addRole(@RequestBody @ApiParam(name="role",value="新增角色对象",required=true) Role role){
 
     }
 
     @ApiOperation("删除角色")
     @PostMapping("/deleteRole")
-    public void deleteRole(@RequestBody @ApiParam(name="角色主键ID",value="传入json格式",required=true) Long roleId){
+    public void deleteRole(@RequestBody @ApiParam(name="roleId",value="角色主键id",type="Long",required=true) Long roleId){
 
     }
 }

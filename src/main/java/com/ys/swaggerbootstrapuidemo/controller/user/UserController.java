@@ -25,14 +25,14 @@ public class UserController {
 
     @ApiOperation("添加用户")
     @PostMapping("/addUser")
-    public void addUser(@RequestBody @ApiParam(name="用户对象",value="传入json格式",required=true) User user){
+    public void addUser(@RequestBody @ApiParam(name="user",value="用户对象",required=true) User user){
 
     }
 
 
     @ApiOperation("删除用户")
     @PostMapping("/deleteUser")
-    public void deleteUser(@RequestBody @ApiParam(name="用户主键ID",value="传入json格式",required=true) Long userId){
+    public void deleteUser(@RequestBody @ApiParam(name="userId",value="用户主键id",type="Long",required=true) Long userId){
 
     }
 }
